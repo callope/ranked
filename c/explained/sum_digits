@@ -1,0 +1,27 @@
+ explanation for the algorithm used in sum_digits
+
+
+    #include <stdio.h>
+    #include <string.h>
+    #include <math.h>
+    #include <stdlib.h>
+
+    int main() {
+      int n;
+      scanf("%d", &n);
+      int sum = 0;
+      while (n != 0) {
+        sum += n % 10;
+        n = n / 10;
+      }
+      printf("%d", sum);
+      return 0;
+    }
+
+first i scan from stdin the number i want to sum it's digits.
+then i use the modulo operator to get the value of it's last
+digit (only modulo by ten will give us the last digit).
+after that, i just divide the number by ten (using the conventional
+division operator, because it will round the number)
+then i just repeat the proccess, adding the value of each
+last digit of the generated numbers

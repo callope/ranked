@@ -1,0 +1,38 @@
+explaining bitwise operators
+
+bitwise operators compare two different values represented in binary
+and apply the following logical operations for each bit (0 or 1 digit)
+to generate a new value
+
+and -> 1 if the two bits compared are equal to 1 (0 in the opposite case)
+or ->  1 if at least one of the bits compared equals to 1 (0 in the opposite case)
+xor -> exclusive or, returns 1  if the two bits compared have different values (0 in the opposite case)
+
+and denoted by & in C
+or denoted by | in C
+xor denoted by ^ in C
+
+examples:
+
+3 = 00000011 (In Binary)
+5 = 00000101 (In Binary)
+AND operation
+
+    00000011
+  & 00000101
+    ________
+    00000001 = 1
+
+OR operation
+
+    00000011
+  | 00000101
+   ________
+    00000111 = 7
+
+XOR operation
+
+    00000011
+  ^ 00000101
+    ________
+    00000110 = 6
