@@ -5,6 +5,3 @@ interface como um tipo, dizemos que todo tipo que possui um comportamento que a 
 estabelece pode ser considerado o tipo da interface.
 
 Por exemplo:
-
-
-

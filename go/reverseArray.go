@@ -10,8 +10,9 @@ import "fmt"
 
 // NOTE: passed.
 func reverseArray(a []int32) []int32 {
+	traverseLimit := len(a)
   for i := range a {
-    if i >= len(a) / 2 { break }
+    if i >= traverseLimit / 2 { break }
     a[i], a[len(a) - i - 1] = a[len(a) - i - 1], a[i]
   }
   return a
